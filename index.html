@@ -50,6 +50,13 @@
             gap: 20px;
             margin-top: 20px;
         }
+        .display-6{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 15px;
+            margin-left: 50px;
+        }
         .font2{
             color: white;
             display: flex;
@@ -225,6 +232,7 @@
         }
         .ul4{
             display: block;
+            margin-right: 50px;
         }
         .li10{
             margin-top: 20px;
@@ -246,6 +254,7 @@
         }
         .text1{
             font-size: 20px;
+            margin-top: 50px;
             margin-left: 40px;
         }
         .text-center{
@@ -270,12 +279,18 @@
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            margin-bottom: 50px;
         }
         .box2{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
             margin-top: 50px;
+        }
+        .box3{
+            height: 200px;
+            width: 300px;
+            margin-left: 20px;
         }
         button{
             background-color: black;
@@ -290,6 +305,12 @@
         .underline{
             text-decoration: underline;
         }
+        .placeholder{
+            height: 50px;
+            padding-left: 20px;
+            width: 400px;
+        }
+    
         
 
 
@@ -638,6 +659,35 @@
                 height: 550px;
             }
         }
+        @media(max-width:500px){
+            .placeholder{
+                width: 250px;
+            }
+        }
+        @media(max-width:400px){
+            .placeholder{
+                width: 200px;
+            }
+            .box{
+                gap: 30px;
+            }
+        }
+        @media(max-width:330px){
+            .placeholder{
+                width: 150px;
+            }
+            .box{
+                gap: 20px;
+            }
+        }
+        @media(max-width:400px){
+            .ul2{
+                display: block;
+            }
+            .ul3{
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
@@ -792,7 +842,7 @@
         </div>
 
         <div class="box">
-            <div><input  type="text" size="40px"  placeholder="Your email"></div>
+            <div><input class="placeholder"  type="text" placeholder="Your email"></div>
             <div><button>Join Now </button></div>
         </div>
 
@@ -847,10 +897,40 @@
                 <li class="li10">contact us</li>
                 <li class="li10">Store Locator</li>
                 <li class="li10">Chat</li>
+                <li class="li10">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
             </ul>
         </div>
-
     </footer>
+       
+
+    <footer>
+        <div class="box3"><img height="100%" width="100%" src="https://thfvnext.bing.com/th/id/OIP.RyrWk8vU7Gl7qskMMKhuxgHaE8?w=265&h=180&c=7&r=0&o=5&cb=thfvnext&dpr=1.3&pid=1.7" alt=""></div>
+        <div class="display-6">
+            <div>Terms & Conditions</div>
+            <div>|</div>
+            <div>Privacy Policy</div>
+            <div>|</div>
+            <div>Privacy Commitment</div>
+            <div>|</div>
+            <div>Interest Based Ads</div>
+            <div>|</div>
+            <div>Do Not Sell or Share My Personal Information</div>
+            <div>|</div>
+            <div>PVH Corp. Joint Modern Slavery Act Statement</div>
+            <div>|</div>
+            <div>Brand Protection</div>
+            <div>|</div>
+            <div>Accessibility</div>
+        </div>
+        <div style="font-size: 15px; margin-top: 50px; margin-left: 50px;">Web ID: 563536358</div>
+        <div  style="font-size: 15px; margin-top: 10px; margin-left: 50px; margin-bottom: 50px;">© 2025 Tommy Hilfiger licensing, LLC. All rights reserved.</div>
+    </footer>
+
     
 
 </body>
